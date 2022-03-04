@@ -1,3 +1,5 @@
 class ListItemSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :description, :completed, :list_id
+
+  belongs_to :list
 end
