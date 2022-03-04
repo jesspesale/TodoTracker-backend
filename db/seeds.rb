@@ -9,3 +9,6 @@
 list1 = List.create(title: "After Work", completed: false)
 list1_item1 = ListItem.create(description: "Go to the gym", completed: false, list_id: 1)
 list1_item = ListItem.create(description: "Make lunch for tomorrow", completed: false, list_id: 1)
+
+# rake db:drop -> rake db:migrate -> rake db:seed
+#  OR rake db:reset
