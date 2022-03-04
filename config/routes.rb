@@ -9,4 +9,4 @@ Rails.application.routes.draw do
 end
 
 
-# fetch('http://localhost:3000/api/v1/transactions')
+# fetch('http://localhost:3000/api/v1/list_items')
