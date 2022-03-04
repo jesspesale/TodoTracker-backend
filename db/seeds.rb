@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+list1 = List.create(title: "After Work", completed: false)
+list1_item1 = ListItem.create(description: "Go to the gym", completed: false, list_id: 1)
+list1_item = ListItem.create(description: "Make lunch for tomorrow", completed: false, list_id: 1)

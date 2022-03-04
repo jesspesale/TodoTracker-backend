@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2022_03_04_010747) do
 
   create_table "list_items", force: :cascade do |t|
-    t.string "desription"
+    t.string "description"
     t.boolean "completed"
     t.integer "list_id"
     t.datetime "created_at", precision: 6, null: false

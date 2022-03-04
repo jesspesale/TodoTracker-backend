@@ -1,5 +1,5 @@
 class List < ApplicationRecord
     has_many :list_items
 
-    validated :title, presence: true
+    validates :title, presence: true
 end
