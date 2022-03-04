@@ -16,11 +16,13 @@ class API::V1::ListsController < ApplicationController
     end
 
     def show
-
+        @list = List.find(params[:id])
+        render json: @list
     end
 
     def destroy
-
+        @list = List.find(params[:id])
+        @list.destroy
     end
 
     private
