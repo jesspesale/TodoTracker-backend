@@ -12,8 +12,11 @@
 
 ActiveRecord::Schema.define(version: 2022_03_04_010747) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "list_items", force: :cascade do |t|
-    t.string "description"
+    t.text "description"
     t.boolean "completed"
     t.integer "list_id"
     t.datetime "created_at", precision: 6, null: false
@@ -21,7 +24,7 @@ ActiveRecord::Schema.define(version: 2022_03_04_010747) do
   end
 
   create_table "lists", force: :cascade do |t|
-    t.string "title"
+    t.text "title"
     t.boolean "completed"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
