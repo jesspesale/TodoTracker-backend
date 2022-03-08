@@ -13,3 +13,5 @@ ListItem
     list_id         :integer
 
 belongs_to  :list
+
+test
