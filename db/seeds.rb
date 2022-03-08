@@ -8,7 +8,10 @@
 
 list1 = List.create(title: "After Work", completed: false)
 list1_item1 = ListItem.create(description: "Go to the gym", completed: false, list_id: 1)
-list1_item = ListItem.create(description: "Make lunch for tomorrow", completed: false, list_id: 1)
+list1_item2 = ListItem.create(description: "Make lunch for tomorrow", completed: false, list_id: 1)
 
+list2 = List.create(title: "Grocery Shopping", completed: false)
+list2_item2 = ListItem.create(description: "Eggs", completed: false, list_id: 2)
+list2_item2 = ListItem.create(description: "Milk", completed: false, list_id: 2)
 # rake db:drop -> rake db:migrate -> rake db:seed
 #  OR rake db:reset
